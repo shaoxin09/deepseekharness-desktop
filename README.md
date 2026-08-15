@@ -12,6 +12,16 @@ English | [中文](README.zh.md)
 - macOS (arm64 / x64) and Windows (x64)
 - Single-instance lock and clean shutdown of the underlying server
 
+## Screenshots
+
+| Workspace | API key | Models |
+|:---:|:---:|:---:|
+| ![Workspace](assets/working.png) | ![API key](assets/setkey.png) | ![Models](assets/model.png) |
+
+| Agent presets | MCP |
+|:---:|:---:|
+| ![Agent presets](assets/agentset.png) | ![MCP](assets/mcp.png) |
+
 ## How it works
 
 The Electron main process:

@@ -12,6 +12,16 @@ DeepSeek Harness 的跨平台桌面版：在原生窗口中运行 dsh web 界面
 - 支持 macOS（arm64 / x64）与 Windows（x64）
 - 单实例锁，退出时干净关闭底层服务
 
+## 界面预览
+
+| 工作区 | API 密钥 | 模型 |
+|:---:|:---:|:---:|
+| ![工作区](assets/working.png) | ![API 密钥](assets/setkey.png) | ![模型](assets/model.png) |
+
+| Agent 预设 | MCP |
+|:---:|:---:|
+| ![Agent 预设](assets/agentset.png) | ![MCP](assets/mcp.png) |
+
 ## 工作原理
 
 Electron 主进程：

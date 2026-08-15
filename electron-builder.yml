@@ -6,6 +6,10 @@ asar: false
 # node-pty and koffi ship ABI-stable N-API prebuilds, so no Electron rebuild
 # is required at package time.
 npmRebuild: false
+# Direct GitHub downloads of the Electron binary time out on some networks;
+# use the npmmirror mirror instead.
+electronDownload:
+  mirror: https://npmmirror.com/mirrors/electron/
 directories:
   output: release
   buildResources: build
@@ -16,6 +20,7 @@ files:
 mac:
   category: public.app-category.developer-tools
   identity: null
+  artifactName: ${productName}-${version}-${arch}.${ext}
   target:
     - target: dmg
     - target: zip
