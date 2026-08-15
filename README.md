@@ -16,13 +16,10 @@ English | [中文](README.zh.md)
 
 
 ![Workspace](assets/working.png) 
-![API key](assets/setkey.png) | 
-![Models](assets/model.png) |
-
-| Agent presets | MCP |
-
-| ![Agent presets](assets/agentset.png) 
-| ![MCP](assets/mcp.png) |
+![API key](assets/setkey.png) 
+![Models](assets/model.png) 
+![Agent presets](assets/agentset.png) 
+![MCP](assets/mcp.png) 
 
 ## How it works
 
