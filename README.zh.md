@@ -1,6 +1,10 @@
 # DeepSeek Harness Desktop
+北京城建设计发展集团，技术研究院；
 
-DeepSeek Harness 的跨平台桌面版：在原生窗口中运行 dsh web 界面，而不是打开浏览器标签页。
+该项目开源免费，基于DeepSeek Harness开源进行形成的桌面版，保留了所有功能。解决了不用在原生窗口中运行 dsh web 界面，打开浏览器标签形式使用。
+release 两个版本：
+DeepSeek Harness-0.1.0-arm64.dmg   m系列芯片
+DeepSeek Harness-0.1.0-x64.dmg     intel系列芯片
 
 [English](README.md) | 中文
 
@@ -14,22 +18,11 @@ DeepSeek Harness 的跨平台桌面版：在原生窗口中运行 dsh web 界面
 
 ## 界面预览
 
-| 工作区 | API 密钥 | 模型 |
-|:---:|:---:|:---:|
-| ![工作区](assets/working.png) | ![API 密钥](assets/setkey.png) | ![模型](assets/model.png) |
-
-| Agent 预设 | MCP |
-|:---:|:---:|
-| ![Agent 预设](assets/agentset.png) | ![MCP](assets/mcp.png) |
-
-## 工作原理
-
-Electron 主进程：
-
-1. 解析已发布的 @deepseek-ai/dsh CLI（lib/bin.js）。
-2. 使用 Electron 内置 Node（ELECTRON_RUN_AS_NODE）启动 "dsh web --port 0"。
-3. 等待 "dsh web: http://127.0.0.1:PORT" 就绪行。
-4. 在该 URL 上打开原生窗口，退出时停止服务。
+![工作区](assets/working.png) 
+![API 密钥](assets/setkey.png) 
+![模型](assets/model.png) 
+![Agent 预设](assets/agentset.png) 
+![MCP](assets/mcp.png) 
 
 ## 环境要求
 
@@ -66,14 +59,10 @@ Windows 代码签名证书。
     src/
       main.mjs        Electron 主进程
       dsh-server.mjs  dsh web 子进程管理
-    electron-builder.yml
+      electron-builder.yml
     .github/workflows/build.yml
 
-## 发布
-
-推送 "v*" 标签（或手动运行工作流）即可触发 build-desktop GitHub Actions
-工作流，构建 macOS arm64 与 Windows x64 产物。
 
 ## 许可证
 
-[MIT](LICENSE)
+[MIT](LICENSE) 免费
