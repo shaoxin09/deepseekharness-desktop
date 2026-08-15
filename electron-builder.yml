@@ -1,0 +1,30 @@
+appId: ai.ucd.deepseek-harness.desktop.m
+productName: DeepSeek Harness
+# dsh runs under Electron's Node and reads files through node's fs, so keep
+# dependencies as plain files instead of packing them into asar.
+asar: false
+# node-pty and koffi ship ABI-stable N-API prebuilds, so no Electron rebuild
+# is required at package time.
+npmRebuild: false
+directories:
+  output: release
+  buildResources: build
+files:
+  - "**/*"
+  - "!**/*.map"
+  - "!release/**"
+mac:
+  category: public.app-category.developer-tools
+  identity: null
+  target:
+    - target: dmg
+    - target: zip
+win:
+  target:
+    - target: nsis
+    - target: portable
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

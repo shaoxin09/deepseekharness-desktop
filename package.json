@@ -1,0 +1,37 @@
+{
+  "name": "deepseekharness-desktop",
+  "productName": "DeepSeek Harness",
+  "version": "0.1.0",
+  "description": "Desktop wrapper for DeepSeek Harness: a native window over the dsh web UI.",
+  "private": true,
+  "type": "module",
+  "main": "src/main.mjs",
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:mac": "electron-builder --mac --arm64",
+    "dist:win": "electron-builder --win --x64"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.1.0-rc.6"
+  },
+  "author": "北京城建设计集团(UCD)-技术研究院",
+  "devDependencies": {
+    "electron": "43.4.0",
+    "electron-builder": "26.15.3"
+  },
+  "allowScripts": {
+    "node-pty@1.1.0": true,
+    "koffi@3.1.5": true,
+    "@deepseek-ai/dsh-subprocess-local@0.1.0-rc.6": true,
+    "@google/genai@1.52.0": true,
+    "protobufjs@7.6.5": true,
+    "electron-winstaller@5.4.0": true
+  }
+}
