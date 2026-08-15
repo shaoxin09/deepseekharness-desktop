@@ -1,20 +1,9 @@
 # DeepSeek Harness Desktop
-北京城建设计发展集团，技术研究院；
 
-该项目开源免费，基于DeepSeek Harness开源进行形成的桌面版，保留了所有功能。解决了不用在原生窗口中运行 dsh web 界面，打开浏览器标签形式使用。
-release 两个版本：
-DeepSeek Harness-0.1.0-arm64.dmg   m系列芯片
-DeepSeek Harness-0.1.0-x64.dmg     intel系列芯片
 
 [English](README.md) | 中文
 
-## 特性
 
-- 在原生窗口中使用 DeepSeek Harness 网页界面
-- 运行时无需系统 Node.js（使用 Electron 内置的 Node）
-- 服务器仅绑定回环地址，不对外暴露端口
-- 支持 macOS（arm64 / x64）与 Windows（x64）
-- 单实例锁，退出时干净关闭底层服务
 
 ## 界面预览
 
