@@ -1,16 +1,9 @@
 # DeepSeek Harness Desktop
 
-A cross-platform desktop wrapper for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). It runs the dsh web UI in a native window instead of a browser tab.
+A free, open-source desktop edition of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness), retaining all of its features. It runs the dsh web UI in a native window instead of a browser tab.
 
 English | [中文](README.zh.md)
 
-## Features
-
-- Native window over the DeepSeek Harness web UI
-- No system Node.js needed at runtime (uses Electron's bundled Node)
-- Loopback-only server, nothing exposed to the network
-- macOS (arm64 / x64) and Windows (x64)
-- Single-instance lock and clean shutdown of the underlying server
 
 ## Screenshots
 
@@ -20,15 +13,6 @@ English | [中文](README.zh.md)
 ![Models](assets/model.png) 
 ![Agent presets](assets/agentset.png) 
 ![MCP](assets/mcp.png) 
-
-## How it works
-
-The Electron main process:
-
-1. Resolves the published @deepseek-ai/dsh CLI (lib/bin.js).
-2. Spawns "dsh web --port 0" under Electron's bundled Node (ELECTRON_RUN_AS_NODE).
-3. Waits for the "dsh web: http://127.0.0.1:PORT" readiness line.
-4. Opens a native window on that URL and stops the server on quit.
 
 ## Prerequisites
 
